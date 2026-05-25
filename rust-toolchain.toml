@@ -1,0 +1,15 @@
+[toolchain]
+channel = "nightly"
+components = [
+    "rustfmt",
+    "miri",
+    "cargo",
+    "clippy",
+    "rustc",
+    "rust-src",
+    "rust-analyzer"
+]
+targets = [
+    "x86_64-unknown-linux-gnu",
+    "wasm32-unknown-unknown"
+]
