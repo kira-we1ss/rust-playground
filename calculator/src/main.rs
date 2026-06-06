@@ -16,20 +16,16 @@ fn divide(a: f64, b: f64) -> f64 {
 
 fn calculate(a: f64, b: f64, op: char) -> f64 {
     if op == '+' {
-        let result = add(a, b);
-        return result;
+        add(a, b)
     } else if op == '-' {
-        let result = subtract(a, b);
-        return result;
+        subtract(a, b)
     } else if op == '*' {
-        let result = multiply(a, b);
-        return result;
+        multiply(a, b)
     } else if op == '/' {
         if b == 0.0 {
             return 0.0;
         } else {
-            let result = divide(a, b);
-            return result;
+            divide(a, b)
         }
     } else {
         return 0.0;
@@ -39,6 +35,7 @@ fn calculate(a: f64, b: f64, op: char) -> f64 {
 fn main() {
     let x = 8.0;
     let y = 0.0;
-    let result = calculate(x, y, '/');
+    let op = '/';
+    let result = calculate(x, y, op);
     println!("{result}");
 }
